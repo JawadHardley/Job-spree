@@ -23,14 +23,14 @@
         </div>
         <div class="row">
             <div class="col my-4">
-                <x-tag>API</x-tag>
-                <x-tag>API</x-tag>
-                <x-tag>API</x-tag>
-                <x-tag>API</x-tag>
-                <x-tag>API</x-tag>
-                <x-tag>API</x-tag>
-                <x-tag>API</x-tag>
-                <x-tag>API</x-tag>
+                <x-tag href="#">API</x-tag>
+                <x-tag href="#">API</x-tag>
+                <x-tag href="#">API</x-tag>
+                <x-tag href="#">API</x-tag>
+                <x-tag href="#">API</x-tag>
+                <x-tag href="#">API</x-tag>
+                <x-tag href="#">API</x-tag>
+                <x-tag href="#">API</x-tag>
             </div>
         </div>
     </div>
