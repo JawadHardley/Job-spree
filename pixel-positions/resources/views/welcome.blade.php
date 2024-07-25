@@ -43,9 +43,9 @@
               </a>
         </div>
         <div class="row">
-            <div class="col my-4">
-                {{-- jabo --}}
-            </div>
+            <x-jobCardWide></x-jobCardWide>
+            <x-jobCardWide></x-jobCardWide>
+            <x-jobCardWide></x-jobCardWide>
         </div>
     </div>
 
