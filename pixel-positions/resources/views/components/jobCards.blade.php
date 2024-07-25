@@ -4,7 +4,7 @@
             <div class="card-body">
               <span class="card-title text-secondary">GovGen</span>
               <h6 class="card-subtitle mb-2 text-center text-white fs-3 py-3">Software Developer</h6>
-              <p class="card-text fs-6 text-center">Full time from - $60,000</p>
+              <p class="card-text fs-6 text-center text-secondary">Full time from - $60,000</p>
 
               <div class="row align-items-end">
                 <div class="col-10">
