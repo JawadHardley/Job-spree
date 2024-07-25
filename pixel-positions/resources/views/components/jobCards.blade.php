@@ -8,9 +8,9 @@
 
               <div class="row align-items-end">
                 <div class="col-10">
-                    <x-tag>API</x-tag>
-                    <x-tag>Backend</x-tag>
-                    <x-tag>NodeJs</x-tag>
+                    <x-tag href="#">API</x-tag>
+                    <x-tag href="#">Backend</x-tag>
+                    <x-tag href="#">NodeJs</x-tag>
                   </div>
                   <div class="col-2 me-auto px-2">
                     <img src="http://placehold.it/42/42" class="rounded" alt="">
