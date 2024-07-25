@@ -2,7 +2,7 @@
     <a href="#1" class="text-decoration-none">
         <div class="card bg-dark text-white" style="">
             <div class="card-body">
-              <span class="card-title">GovGen</span>
+              <span class="card-title text-secondary">GovGen</span>
               <h6 class="card-subtitle mb-2 text-center fs-3 py-3">Software Developer</h6>
               <p class="card-text fs-6 text-center">Full time from - $60,000</p>
 
