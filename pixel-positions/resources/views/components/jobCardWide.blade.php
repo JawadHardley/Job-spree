@@ -2,7 +2,7 @@
     <a href="#1" class="text-decoration-none">
         <div class="row">
             <div class="col-2">
-                <img src="http://placehold.it/120/120" class="rounded img-fluid" alt="">
+                <x-employerLogo width='120'/>
             </div>
             <div class="col-8">
                 <h6 class="lead fs-6 text-secondary">GovGen</h6>
@@ -23,6 +23,6 @@
         </div>
             <x-tag href="#2" class="float-end mx-1">API</x-tag>
             <x-tag href="#2" class="float-end mx-1">Backend</x-tag>
-            <x-tag href="#2" class="float-end mx-1">NodeJs</x-tag>
+            <x-tag href="#2" class="float-end mx-1">React</x-tag>
     </a>
 </div>

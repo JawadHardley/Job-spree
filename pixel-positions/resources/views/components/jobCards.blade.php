@@ -13,7 +13,7 @@
                     <x-tag href="#">NodeJs</x-tag>
                   </div>
                   <div class="col-2 me-auto px-2">
-                    <img src="http://placehold.it/42/42" class="rounded" alt="">
+                    <x-employerLogo width='42'/>
                   </div>
               </div>
 
