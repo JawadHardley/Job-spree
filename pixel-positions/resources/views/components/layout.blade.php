@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <title>pixels</title>
     <script type="module" src="./js/main.js"></script>
     @vite(['resources/js/app.js', 'resources/css/app.css'])
   </head>
