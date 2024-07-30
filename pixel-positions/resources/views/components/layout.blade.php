@@ -34,7 +34,7 @@
               </div>
               <a href="#" class="text-decoration-none text-white">
                 <i class="bi bi-check-square-fill text-primary"></i>
-                Post a job
+            Post a' job
               </a>
             </div>
       </nav>
