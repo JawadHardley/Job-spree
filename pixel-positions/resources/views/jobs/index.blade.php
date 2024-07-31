@@ -8,9 +8,11 @@
               </a>
         </div>
         <div class="row">
-                <x-jobCards></x-jobCards>
-                <x-jobCards></x-jobCards>
-                <x-jobCards></x-jobCards>
+            @foreach ($jobs as $job)
+                <x-jobCards :$job />
+            @endforeach
+                {{-- <x-jobCards></x-jobCards>
+                <x-jobCards></x-jobCards> --}}
         </div>
     </div>
 
@@ -23,14 +25,9 @@
         </div>
         <div class="row">
             <div class="col my-4">
-                <x-tag href="#">API</x-tag>
-                <x-tag href="#">API</x-tag>
-                <x-tag href="#">API</x-tag>
-                <x-tag href="#">API</x-tag>
-                <x-tag href="#">API</x-tag>
-                <x-tag href="#">API</x-tag>
-                <x-tag href="#">API</x-tag>
-                <x-tag href="#">API</x-tag>
+                @foreach ($tags as $tag)
+                    <x-tag :$tag href="/tag/{{ $tag->name }}">{{ $tag->name }}</x-tag>
+                @endforeach
             </div>
         </div>
     </div>
@@ -43,9 +40,11 @@
               </a>
         </div>
         <div class="row">
-            <x-jobCardWide></x-jobCardWide>
-            <x-jobCardWide></x-jobCardWide>
-            <x-jobCardWide></x-jobCardWide>
+            @foreach ($jobs as $job)
+                <x-jobCardWide :$job />
+            @endforeach
+            {{-- <x-jobCardWide></x-jobCardWide>
+            <x-jobCardWide></x-jobCardWide> --}}
         </div>
     </div>
 
