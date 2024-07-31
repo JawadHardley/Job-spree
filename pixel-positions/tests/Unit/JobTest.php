@@ -5,7 +5,7 @@ use App\Models\Job;
 
 
 
-it('example', function () {
+it('belongs to an employer', function () {
     $employer = Employer::factory()->create();
     $job = Job::factory()->create([
         'employer_id' => $employer->id,
@@ -18,7 +18,7 @@ it('example', function () {
 it('can have tags', function () {
     $job = Job::factory()->create();
 
-    $job = tag('Frontend');
+    $job->tag('Frontend');
 
-    expect($job->tag)->toHaveCount(1);
+    expect($job->tags)->toHaveCount(1);
 });
