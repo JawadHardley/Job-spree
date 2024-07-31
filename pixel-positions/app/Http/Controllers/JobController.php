@@ -15,6 +15,7 @@ class JobController extends Controller
     public function index()
     {
         return view('jobs.index', [
+            'featuredJobs' => Job::where('featured', 1)->get(),
             'jobs' => Job::all(),
             'tags' => Tag::all(),
         ]);

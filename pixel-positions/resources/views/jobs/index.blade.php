@@ -8,7 +8,7 @@
               </a>
         </div>
         <div class="row">
-            @foreach ($jobs as $job)
+            @foreach ($featuredJobs as $job)
                 <x-jobCards :$job />
             @endforeach
                 {{-- <x-jobCards></x-jobCards>
