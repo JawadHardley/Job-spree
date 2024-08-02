@@ -5,7 +5,9 @@
         <div class="card bg-dark text-white" style="">
             <div class="card-body">
               <span class="card-title text-secondary">{{ $job->employer->name }}</span>
-              <h6 class="card-subtitle mb-2 text-center text-white fs-3 py-3">{{ $job->title }}</h6>
+              <h6 class="card-subtitle mb-2 text-center text-white fs-3 py-3">
+                <a href="{{ $job->url }}" class="text-decoration-none text-white">{{ $job->title }}</a>
+              </h6>
               <p class="card-text fs-6 text-center text-secondary">{{ $job->schedule }} from - {{ $job->salary }}</p>
 
               <div class="row align-items-end">

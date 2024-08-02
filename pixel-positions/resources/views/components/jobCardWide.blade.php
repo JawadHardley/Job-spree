@@ -1,7 +1,7 @@
 @props(['job'])
 
 <div class="col-12 my-3 p-3 rounded bg-dark">
-    <a href="#1" class="text-decoration-none">
+    <a href="{{ $job->url }}" class="text-decoration-none">
         <div class="row">
             <div class="col-2">
                 <x-employerLogo width='120'/>
