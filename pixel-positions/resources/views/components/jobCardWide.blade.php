@@ -1,10 +1,10 @@
 @props(['job'])
 
 <div class="col-12 my-3 p-3 rounded bg-dark">
-    <a href="{{ $job->url }}" class="text-decoration-none">
+    <a href="{{ $job->url }}" target="_blank" class="text-decoration-none">
         <div class="row">
             <div class="col-2">
-                <x-employerLogo width='120'/>
+                <x-employerLogo :employer="$job->employer" width='120'/>
             </div>
             <div class="col-8">
                 <h6 class="lead fs-6 text-secondary">{{ $job->employer->name }}</h6>

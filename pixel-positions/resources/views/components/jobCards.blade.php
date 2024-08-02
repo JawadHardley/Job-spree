@@ -6,7 +6,7 @@
             <div class="card-body">
               <span class="card-title text-secondary">{{ $job->employer->name }}</span>
               <h6 class="card-subtitle mb-2 text-center text-white fs-3 py-3">
-                <a href="{{ $job->url }}" class="text-decoration-none text-white">{{ $job->title }}</a>
+                <a href="{{ $job->url }}" class="text-decoration-none text-white" target="_blank">{{ $job->title }}</a>
               </h6>
               <p class="card-text fs-6 text-center text-secondary">{{ $job->schedule }} from - {{ $job->salary }}</p>
 
@@ -17,7 +17,7 @@
                     @endforeach
                   </div>
                   <div class="col-2 me-auto px-2">
-                    <x-employerLogo width='42'/>
+                    <x-employerLogo :employer="$job->employer" width='42'/>
                   </div>
               </div>
 

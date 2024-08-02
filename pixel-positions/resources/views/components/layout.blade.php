@@ -33,10 +33,26 @@
                 </ul>
               </div>
               @auth
-              <a href="/jobs/create" class="text-decoration-none text-white">
-                <i class="bi bi-check-square-fill text-primary"></i>
-                Post a' job
-              </a>
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-person text-primary"></i> {{ Auth::user()->name }}
+                  </a>
+                  <ul class="dropdown-menu">
+                    <form action="/logout" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button class="dropdown-item">logout</button>
+                    </form>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="/jobs/create" class="nav-item text-decoration-none text-white">
+                        <i class="bi bi-check-square-fill text-primary"></i>
+                        Post a job
+                      </a>
+                  </li>
+              </ul>
               @endauth
 
               @guest
