@@ -1,3 +1,3 @@
 <div>
-    <div class="bg-white/10 my-10 h-px w-full"></div>
+    <hr class="bg-dark my-5 w-100"/>
 </div>
