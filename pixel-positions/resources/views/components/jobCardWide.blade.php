@@ -24,7 +24,7 @@
             </div>
         </div>
         @foreach ($job->tags as $tag)
-            <x-tag :$tag href="/tag/{{ $tag->name }}"/>
+            <x-tag :$tag href="/tag/{{ $tag->name }}">{{ $tag->name }}</x-tag>
         @endforeach
     </a>
 </div>
