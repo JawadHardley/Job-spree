@@ -7,7 +7,7 @@
             <x-forms.input class=""  label="Your Name" name="name" />
             <x-forms.input class=""  label="email" name="email" type="email" />
             <x-forms.input class=""  label="password" name="password" type="password" />
-            <x-forms.input class=""  label="password confirmation" name="name" type="password" />
+            <x-forms.input class=""  label="password confirmation" name="password_confirmation" type="password" />
 
             <x-forms.divider />
             <x-forms.input class=""  label="Employer Name" name="employer" />

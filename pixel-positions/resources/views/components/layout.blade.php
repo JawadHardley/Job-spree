@@ -32,10 +32,26 @@
                   </li>
                 </ul>
               </div>
-              <a href="#" class="text-decoration-none text-white">
+              @auth
+              <a href="/jobs/create" class="text-decoration-none text-white">
                 <i class="bi bi-check-square-fill text-primary"></i>
-            Post a' job
+                Post a' job
               </a>
+              @endauth
+
+              @guest
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                  </li>
+                </ul>
+              </div>
+              @endguest
             </div>
       </nav>
 

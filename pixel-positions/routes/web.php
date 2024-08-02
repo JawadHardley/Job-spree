@@ -10,11 +10,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [JobController::class, 'index']);
 
-// User registration
-Route::get('/register', [RegisteredUserController::class, 'create']);
-Route::post('/register', [RegisteredUserController::class, 'store']);
+Route::middleware('guest')->group(function () {
+    // User registration
+    Route::get('/register', [RegisteredUserController::class, 'create']);
+    Route::post('/register', [RegisteredUserController::class, 'store']);
 
-// User sessions
-Route::get('/login', [SessionController::class, 'create']);
-Route::post('/login', [SessionController::class, 'store']);
-Route::delete('/logout', [SessionController::class, 'destroy']);
+    // User sessions
+    Route::get('/login', [SessionController::class, 'create']);
+    Route::post('/login', [SessionController::class, 'store']);
+});
+
+Route::delete('/logout', [SessionController::class, 'destroy'])->middleware('auth');
