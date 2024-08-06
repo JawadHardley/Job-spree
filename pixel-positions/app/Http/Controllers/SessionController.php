@@ -39,6 +39,7 @@ class SessionController extends Controller
         return redirect('/');
     }
 
+
     /**
      * Remove the specified resource from storage.
      */
